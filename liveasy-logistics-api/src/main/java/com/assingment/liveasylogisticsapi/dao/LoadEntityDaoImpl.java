@@ -44,8 +44,5 @@ public class LoadEntityDaoImpl implements LoadEntityDao {
     @Override
     public void deleteLoadEntity(Long id) {
         LoadEntity loadEntity = entityManager.find(LoadEntity.class, id);
-        if (loadEntity != null) {
-            entityManager.remove(loadEntity);
-        }
     }
 }
